@@ -30,10 +30,12 @@ document.getElementById("myButton").addEventListener("click", function() {
         if (frequency[word]) {
 
             frequency[word]++;
+            console.log(frequency);
 
         } else {
 
             frequency[word] = 1;
+            console.log(frequency);
 
         }
 
