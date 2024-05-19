@@ -23,7 +23,7 @@ document.getElementById("myButton").addEventListener("click", function() {
 
     let frequency = {};
 
-    for (let i = 0; i < words.length; i++) {
+    for (var i = 0; i < words.length; i++) {
 
         let word = words[i];
 
@@ -68,7 +68,7 @@ document.getElementById("myButton").addEventListener("click", function() {
     headRow.appendChild(headCell2);
     table.appendChild(headRow);
 
-    for (let i = 0; i < data.length; i++) {
+    for (var i = 0; i < data.length; i++) {
 
         let row = document.createElement("tr");
         let cell1 = document.createElement("td");
