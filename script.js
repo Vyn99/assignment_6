@@ -51,7 +51,7 @@ document.getElementById("myButton").addEventListener("click", function() {
         
         if(b.frequency === a.frequency){
 
-            return a.result > b.result ? 1 : -1;
+            return a.result < b.result ? 1 : -1;
             
         }
         
