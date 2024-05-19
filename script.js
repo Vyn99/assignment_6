@@ -48,7 +48,13 @@ document.getElementById("myButton").addEventListener("click", function() {
     });
 
     data.sort(function(a, b) {
+        
+        if(b.frequency === a.frequency){
 
+            return a.result > b.result ? 1 : -1;
+            
+        }
+        
         return b.frequency - a.frequency;
 
     });
