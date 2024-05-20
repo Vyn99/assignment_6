@@ -48,13 +48,12 @@ document.getElementById("myButton").addEventListener("click", function() {
     });
 
     data.sort(function(a, b) {
-        
+
         if(b.frequency === a.frequency){
 
             return a.result < b.result ? 1 : -1;
-            
+
         }
-        
         return b.frequency - a.frequency;
 
     });
@@ -82,7 +81,7 @@ document.getElementById("myButton").addEventListener("click", function() {
 
         cell1.innerHTML = data[i].result;
         cell2.innerHTML = data[i].frequency;
-        
+
         row.appendChild(cell1);
         row.appendChild(cell2);
         table.appendChild(row);
