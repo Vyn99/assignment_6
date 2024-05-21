@@ -19,7 +19,7 @@ document.getElementById("myButton").addEventListener("click", function() {
     
     let text = document.getElementById("myTextarea").value;
 
-    let words = text.split(' ');
+    let words = text.split(/\s+/);
 
     let frequency = {};
 
